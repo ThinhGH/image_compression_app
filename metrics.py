@@ -18,7 +18,7 @@ def mse(img1, img2):
 
 
 def ssim(img1, img2):
-    # Chuyển sang grayscale nếu là RGB
+
     if len(img1.shape) == 3:
         img1 = cv2.cvtColor(img1, cv2.COLOR_BGR2GRAY)
         img2 = cv2.cvtColor(img2, cv2.COLOR_BGR2GRAY)
